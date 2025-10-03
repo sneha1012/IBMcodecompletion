@@ -1,0 +1,64 @@
+[
+  {
+    "repo": "pandas-dev/pandas",
+    "pr_number": 62444,
+    "language": "python",
+    "trigger": "pr_step",
+    "context_files": [
+      "pandas/core/frame.py",
+      "pandas/tests/frame/methods/test_aggregate.py"
+    ],
+    "next_edit": {
+      "type": "multi_file_diff",
+      "files": [
+        {
+          "path": "pandas/core/frame.py",
+          "op": "replace",
+          "span": { "start_line": 10503, "end_line": 10515 },
+          "hunk_header": "@@ -10503,6 +10503,13 @@",
+          "summary": "Fix aggregate on empty DataFrame to return empty Series"
+        },
+        {
+          "path": "pandas/tests/frame/methods/test_aggregate.py",
+          "op": "insert",
+          "span": { "start_line": 1, "end_line": 12 },
+          "hunk_header": "@@ -0,0 +1,12 @@",
+          "summary": "Add regression test for aggregate on empty DataFrame"
+        }
+      ]
+    },
+    "notes": "Bugfix + test",
+    "gold_link": "https://github.com/pandas-dev/pandas/pull/62444"
+  },
+  {
+    "repo": "pandas-dev/pandas",
+    "pr_number": 62465,
+    "language": "python",
+    "trigger": "pr_step",
+    "context_files": [
+      "pandas/core/arrays/arrow/array.py",
+      "pandas/tests/indexing/test_iloc.py"
+    ],
+    "next_edit": {
+      "type": "multi_file_diff",
+      "files": [
+        {
+          "path": "pandas/core/arrays/arrow/array.py",
+          "op": "replace",
+          "span": { "start_line": 569, "end_line": 575 },
+          "hunk_header": "@@ -569,6 +569,7 @@",
+          "summary": "Handle .iloc setitem when rhs is a Series[pyarrow]"
+        },
+        {
+          "path": "pandas/tests/indexing/test_iloc.py",
+          "op": "insert",
+          "span": { "start_line": 1536, "end_line": 1550 },
+          "hunk_header": "@@ -1535,3 +1536,15 @@",
+          "summary": "Add test for .iloc assignment with Series[pyarrow]"
+        }
+      ]
+    },
+    "notes": "Bugfix + test for pyarrow Series assignment",
+    "gold_link": "https://github.com/pandas-dev/pandas/pull/62465"
+  }
+]
