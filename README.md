@@ -1,6 +1,6 @@
 # Mini Next-Action Dataset
 
-Goal: predict the next coherent edit (grouped diff) across files, not token autocomplete.
+We are working on a project to predict the next coherent edit (grouped diff) across files, not token autocomplete.
 
 Anchor: mirrors Zeta’s “editable region → next edit,” but built from public GitHub PR diffs.
 
